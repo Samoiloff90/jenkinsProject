@@ -17,8 +17,7 @@ public class RegistrationFormTest extends TestBase{
 
     @Test
     void successFillTest() {
-        open("/automation-practice-form");
-        registrationPage
+        registrationPage.openPage()
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setUserEmail(userEmail)
