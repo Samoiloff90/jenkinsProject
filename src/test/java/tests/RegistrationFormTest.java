@@ -26,7 +26,7 @@ public class RegistrationFormTest extends TestBase{
                 .setBirthDate(birthDateDay, birthDateMouth, birthDateYear)
                 .setSubjects(subjects)
                 .setHobbies(hobbies)
-                .setUploadFile(file)
+//                .setUploadFile(file)
                 .setAddress(userAddress)
                 .setState(userState)
                 .setCity(userCity)
@@ -41,7 +41,7 @@ public class RegistrationFormTest extends TestBase{
                 .checkResultInModal("Date of Birth", birthDate)
                 .checkResultInModal("Subjects", subjects)
                 .checkResultInModal("Hobbies", hobbies)
-                .checkResultInModal("Picture", file)
+//                .checkResultInModal("Picture", file)
                 .checkResultInModal("Address", userAddress)
                 .checkResultInModal("State and City", userState + " " + userCity);
     }
