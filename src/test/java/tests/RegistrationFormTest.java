@@ -2,20 +2,24 @@ package tests;
 
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Attachment;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import pages.RegistrationPage;
-
-import static com.codeborne.selenide.Selenide.open;
 import static tests.RegistrationFormTestData.*;
 
 
+@DisplayName("demoqa.com tests")
+@Severity(SeverityLevel.CRITICAL)
 public class RegistrationFormTest extends TestBase{
 
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
+    @DisplayName("Заполнение формы регистрации")
     void successFillTest() {
         registrationPage.openPage()
                 .setFirstName(firstName)
