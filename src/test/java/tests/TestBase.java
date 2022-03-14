@@ -32,7 +32,7 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
 
         // для запуска на удаленном селеноиде
-        Configuration.remote = "https://" + user + ":" + password + "@" + System.getProperty("remoteBrowser");
+        Configuration.remote = "https://" + user + ":" + password + "@selenoid.autotests.cloud/wd/hub";
     }
 
     @AfterEach
